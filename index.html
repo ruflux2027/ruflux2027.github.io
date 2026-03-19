@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting…</title>
+</head>
+<body>
+<p>Redirecting… <a id="fallback" href="/en/">Click if not redirected</a></p>
+
+<script>
+    function isRussian() {
+        // Check navigator.languages (modern, reliable)
+        if (navigator.languages && navigator.languages.length) {
+            return navigator.languages[0].toLowerCase().startsWith('ru');
+        }
+        // Fallback to navigator.language
+        if (navigator.language) {
+            return navigator.language.toLowerCase().startsWith('ru');
+        }
+        return false;
+    }
+    
+    const dest = isRussian() ? './ru/index.html' : './en/index.html';
+    document.getElementById('fallback').href = dest;
+    setTimeout(() => location.href = dest, 600);
+</script>
+
+<noscript>
+    <meta http-equiv="refresh" content="3;url=/en/">
+</noscript>
+</body>
+</html>
