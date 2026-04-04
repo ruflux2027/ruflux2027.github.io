@@ -20,7 +20,8 @@
         return false;
     }
     
-    const dest = isRussian() ? './ru/index.html' : './en/index.html';
+    // const dest = isRussian() ? './ru/index.html' : './en/index.html';
+	const dest = './ru/index.html';
     document.getElementById('fallback').href = dest;
     setTimeout(() => location.href = dest, 600);
 </script>
