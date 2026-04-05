@@ -18118,7 +18118,8 @@ main {
     box-sizing: border-box;
     margin-top: 0;
     padding: clamp(1rem, 6vh, 10rem) 1rem;
-    background-position-y: bottom;
+    background-position-y: top;
+	background-position-x: center;
 }
 
 .hero-text-container {
