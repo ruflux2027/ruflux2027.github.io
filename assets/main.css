@@ -18119,7 +18119,7 @@ main {
     margin-top: 0;
     padding: clamp(1rem, 6vh, 10rem) 1rem;
     background-position-y: top;
-	background-position-x: center;
+    background-position-x: center;
 }
 
 .hero-text-container {
@@ -18141,6 +18141,7 @@ main {
     min-width: min-content;
     width: 50%;
     top: 60%;
+    text-align: center;
 }
 
 .sponsor-banner {
