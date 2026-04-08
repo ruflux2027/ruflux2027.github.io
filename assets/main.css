@@ -18140,7 +18140,9 @@ main {
     min-width: min-content;
     top: 60%;
     width: fit-content;
+    margin: 0 auto;	
     display: flex;
+	justify-content: center;
 }
 
 .sponsor-banner {
