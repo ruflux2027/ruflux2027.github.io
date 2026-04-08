@@ -18118,8 +18118,21 @@ main {
     box-sizing: border-box;
     margin-top: 0;
     padding: clamp(1rem, 6vh, 10rem) 1rem;
-    background-position-y: top;
-    background-position-x: center;
+    background-position-y: 40px;
+    background-position-x: 0px;
+	background-size: auto;
+}
+
+@media (min-width:1228px) {
+    .hero-image {
+        background-size: cover;
+    }
+}
+
+@media (max-width:576px) {
+    .hero-image {
+        background-size: auto 65vh;
+    }
 }
 
 .hero-text-container {
@@ -18140,9 +18153,9 @@ main {
     min-width: min-content;
     top: 60%;
     width: fit-content;
-    margin: 0 auto;	
+    margin: 0 auto;
     display: flex;
-	justify-content: center;
+    justify-content: center;
 }
 
 .sponsor-banner {
